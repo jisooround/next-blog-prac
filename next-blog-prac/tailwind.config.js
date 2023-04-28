@@ -10,10 +10,10 @@ module.exports = {
       colors: {
         uPrimary: "#ff8ad2",
         uFontColor: "#586171",
-        uBgColor: "#F9F9FE",
+        uBgColor: "#f2f2f2",
         uBlue: "#4A4870",
         uRed: "#FF4B60",
-        uWhite: "#f2f2f2",
+        uWhite: "#ffffff",
         uGray: "#9A9FA9",
         uTwitter: "#1DA1F1",
         uFacebook: "#165BEA",

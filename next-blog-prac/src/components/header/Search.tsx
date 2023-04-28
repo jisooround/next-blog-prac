@@ -5,7 +5,7 @@ type Props = {};
 
 const Search = (props: Props) => {
   return (
-    <div className="bg-uTwitter w-12 h-12 rounded-full flex justify-center items-center text-uWhite hover:">
+    <div className="bg-uTwitter w-11 h-11 rounded-full flex justify-center items-center text-uWhite hover:">
       <GoSearch />
     </div>
   );

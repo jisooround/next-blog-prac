@@ -13,7 +13,7 @@ const snsList = [
 
 const Social = (props: Props) => {
   return (
-    <ul className="flex gap-5 align-bottom text-xl items-center">
+    <ul className="flex gap-5 align-bottom text-2xl items-center">
       {snsList.map((icon, idx) => (
         <li key={idx}>{icon.element}</li>
       ))}

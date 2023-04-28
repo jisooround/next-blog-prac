@@ -33,7 +33,7 @@ export default function RootLayout({
       className={`${sourceSerifPro.variable} ${josefinSans.variable}`}
     >
       {/* <ThemeProvider defaultTheme="light" attribute="class"> */}
-      <body className="bg-uBgColor">
+      <body className="bg-uWhite">
         <Header />
         <main className="flex">
           <section>{children}</section>
