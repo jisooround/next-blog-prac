@@ -4,8 +4,8 @@ type Props = {};
 
 const MainLogo = (props: Props) => {
   return (
-    <div className="font-black text text-uPrimary text-6xl">
-      <span className="text-uTwitter">Mudi</span> Blog
+    <div className="font-black text-uPrimary text-6xl absolute right-0 left-0 mx-auto flex justify-center">
+      <span className="text-uTwitter">Mudi</span>Blog
     </div>
   );
 };

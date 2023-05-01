@@ -1,17 +1,17 @@
 import React from "react";
-import Social from "../header/Social";
 import AboutMe from "./AboutMe";
 import Articles from "./Articles";
+import FollowMe from "./FollowMe";
 import TagCloud from "./TagCloud";
 
 type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="uBgColor w-2/3 m-auto">
+    <div className="bg-uBgColor flex px-12">
       <Articles />
       <TagCloud />
-      <Social />
+      <FollowMe />
       <AboutMe />
     </div>
   );
