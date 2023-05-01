@@ -7,7 +7,7 @@ const tagList = [
   { tagName: "JavaScript", color: "uPrimary" },
   { tagName: "TypeScript", color: "uBlue" },
   { tagName: "React", color: "uTwitter" },
-  { tagName: "Css", color: "uRed" },
+  { tagName: "CSS", color: "uRed" },
   { tagName: "Project", color: "uYellow" },
   { tagName: "Study", color: "uSkyBlue" },
 ];
@@ -15,11 +15,13 @@ const tagList = [
 const TagCloud = (props: Props) => {
   return (
     <BlockUi name={"Tag Cloud"}>
-      {tagList.map((tag) => (
-        <div>
-          <span className={`text-${tag.color}`}>#</span> {tag.tagName}
-        </div>
-      ))}
+      <div className="flex flex-wrap gap-3">
+        {tagList.map((tag) => (
+          <div className="bg-uWhite text-uFontColor flex p-1 text-sm shadow-md cursor-pointer">
+            <button className={`text-${tag.color}`}>#</button> {tag.tagName}
+          </div>
+        ))}
+      </div>
     </BlockUi>
   );
 };

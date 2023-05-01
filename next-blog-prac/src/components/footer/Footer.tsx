@@ -8,7 +8,7 @@ type Props = {};
 
 const Footer = (props: Props) => {
   return (
-    <div className="bg-uBgColor flex px-12">
+    <div className="bg-uBgColor px-12 grid grid-cols-4">
       <Articles />
       <TagCloud />
       <FollowMe />
