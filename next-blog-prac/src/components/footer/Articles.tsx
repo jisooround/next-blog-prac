@@ -27,15 +27,12 @@ const Articles = (props: Props) => {
     <BlockUi name={"Articles"}>
       {articlesList.map((item, idx) => (
         <div key={idx} className="flex mb-5 w-full justify-between">
-          <Image
-            src={item.thumbnailURL}
-            alt={item.title}
-            width={60}
-            height={64}
-            className="object-cover mr-5"
-          />
+          <div className="w-16 h-17 bg-uGray box-border mr-5"></div>
           <div>
-            <h4 className="text-uFontColor font-semibold">{item.title}</h4>
+            <h4 className="text-uFontColor font-semibold mb-3">{item.title}</h4>
+            <p className="font-serif text-sm text-uFontColor font-semibold">
+              {item.date}
+            </p>
           </div>
         </div>
       ))}

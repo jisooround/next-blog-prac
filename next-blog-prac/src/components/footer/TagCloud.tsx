@@ -4,12 +4,12 @@ import BlockUi from "../ui/BlockUi";
 type Props = {};
 
 const tagList = [
-  { tagName: "JavaScript", color: "uPrimary" },
-  { tagName: "TypeScript", color: "uBlue" },
-  { tagName: "React", color: "uTwitter" },
-  { tagName: "CSS", color: "uRed" },
-  { tagName: "Project", color: "uYellow" },
-  { tagName: "Study", color: "uSkyBlue" },
+  { tagName: "JavaScript", textColor: "text-uPrimary" },
+  { tagName: "TypeScript", textColor: "text-uBlue" },
+  { tagName: "React", textColor: "text-uTwitter" },
+  { tagName: "CSS", textColor: "text-uRed" },
+  { tagName: "Project", textColor: "text-uYellow" },
+  { tagName: "Study", textColor: "text-uSkyBlue" },
 ];
 
 const TagCloud = (props: Props) => {
@@ -19,9 +19,9 @@ const TagCloud = (props: Props) => {
         {tagList.map((tag, idx) => (
           <div
             key={idx}
-            className="bg-uWhite text-uFontColor flex p-1 text-sm shadow-md cursor-pointer"
+            className={`bg-uWhite text-uFontColor flex p-1 text-sm shadow-md cursor-pointer`}
           >
-            <button className={`text-${tag.color}`}>#</button> {tag.tagName}
+            <button className={`${tag.textColor}`}>#</button> {tag.tagName}
           </div>
         ))}
       </div>
