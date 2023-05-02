@@ -35,8 +35,9 @@ const FollowMe = (props: Props) => {
   return (
     <BlockUi name={"FollowMe!"}>
       <div className="flex w-full">
-        {socialList.map((item) => (
+        {socialList.map((item, idx) => (
           <div
+            key={idx}
             className={`flex justify-center items-center w-20 h-20 ${item.bg} mr-3`}
           >
             <p className="text-uWhite text-xl">{item.icon}</p>
