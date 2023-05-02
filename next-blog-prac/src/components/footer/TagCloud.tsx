@@ -16,8 +16,11 @@ const TagCloud = (props: Props) => {
   return (
     <BlockUi name={"Tag Cloud"}>
       <div className="flex flex-wrap gap-3">
-        {tagList.map((tag) => (
-          <div className="bg-uWhite text-uFontColor flex p-1 text-sm shadow-md cursor-pointer">
+        {tagList.map((tag, idx) => (
+          <div
+            key={idx}
+            className="bg-uWhite text-uFontColor flex p-1 text-sm shadow-md cursor-pointer"
+          >
             <button className={`text-${tag.color}`}>#</button> {tag.tagName}
           </div>
         ))}
