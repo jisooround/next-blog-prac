@@ -6,8 +6,6 @@ type Props = {
 };
 
 const IconUi = ({ channel }: Props) => {
-  const data = icons.find((item) => item.name === channel);
-  console.log(data);
   return <div>{channel}</div>;
 };
 
