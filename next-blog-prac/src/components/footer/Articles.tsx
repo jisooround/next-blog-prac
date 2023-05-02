@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import BlockUi from "../ui/BlockUi";
 
@@ -26,10 +27,12 @@ const Articles = (props: Props) => {
     <BlockUi name={"Articles"}>
       {articlesList.map((item, idx) => (
         <div key={idx} className="flex mb-5 w-full justify-between">
-          <img
+          <Image
             src={item.thumbnailURL}
             alt={item.title}
-            className="w-1/6 min-w-1/6 h-16 object-cover mr-5"
+            width={60}
+            height={64}
+            className="object-cover mr-5"
           />
           <div>
             <h4 className="text-uFontColor font-semibold">{item.title}</h4>
