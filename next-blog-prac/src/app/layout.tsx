@@ -35,8 +35,8 @@ export default function RootLayout({
       {/* <ThemeProvider defaultTheme="light" attribute="class"> */}
       <body className="bg-uWhite">
         <Header />
-        <main className="flex">
-          <section>{children}</section>
+        <main className="flex justify-center m-auto w-2/3 mb-24">
+          <section className="w-2/3 bg-ugray">{children}</section>
           <SideBar />
         </main>
         <Footer />
